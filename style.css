@@ -1,0 +1,474 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:arial;
+	box-sizing:border-box;
+}
+
+/* main contante start */
+.sec_1{
+	width:100%;
+	height:100vh;
+}
+
+.continer{
+	position:absolute;
+	height:100vh;
+	width:100%;
+	background: url(asset/img/001.jpg) no-repeat center center fixed ;
+	background-size:cover;
+}
+.outer{
+	position:relative;
+	height:100vh;
+	width:100%;
+	top:0;
+	left:0;
+	background:rgba(0,0, 0, 0.8);
+}
+.details{
+	position:absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:white;
+	text-transform:capitalize;
+	font-size:30px;
+	text-align:center;
+}
+.details h1 span{
+	color:yellow;
+}
+.details h2 {
+    font-size: 27px;
+    padding-top: 15px;
+    color: #ff8d00;
+}
+.details h2{
+	font-size:30px;
+}
+
+/* main contante end */
+
+/* login singUp btn/box start */
+
+input.sign_up {
+    position: absolute;
+    top: 131%;
+    left: 29%;
+    background: #fff;
+    border: none;
+    padding: 11px 23px;
+    color: orange;
+    font-size: 13px;
+    font-family: arial black;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+.After_click {
+    position: absolute;
+    top: 131%;
+    left: 29%;
+    background: orange;
+    border: none;
+    padding: 11px 23px;
+    color: #fff;
+    font-size: 13px;
+    font-family: arial black;
+    border-radius: 10px;
+	cursor:pointer;
+}
+input.login {
+    position: absolute;
+    top: 131%;
+    left: 52%;
+    background: orange;
+    border: none;
+    padding: 11px 23px;
+    color: #fff;
+    font-size: 13px;
+    font-family: arial black;
+    border-radius: 10px;
+	cursor:pointer;
+}
+.After_click_2 {
+    position: absolute;
+    top: 131%;
+    left: 52%;
+    background: white;
+    border: none;
+    padding: 11px 23px;
+    color: orange;
+    font-size: 13px;
+    font-family: arial black;
+    border-radius: 10px;
+	cursor:pointer;
+}
+.singUp_box{
+	position: absolute;
+    top: 85px;
+    left: 0;
+    height: 450px;
+    width: 363px;
+    background:#ffffff26;
+    border: 2px solid orange;
+	transition:all 1s;
+	transform:scaleX(0); 
+	transform-origin:left; 
+}
+.logIn_box{
+	position: absolute;
+    top: 85px;
+    left: 0;
+    height: 450px;
+    width: 363px;
+    background:#ffffff26;
+    border: 2px solid orange;
+	transition:all 1s;
+	transform:scaleX(0); 
+	transform-origin:left; 
+}
+.fa-close{
+	position:absolute;
+	top:3px;
+	right:2%;
+	height:10px;
+	width:10px;
+	color:#fff;
+	cursor:pointer;
+}
+.fa-close:hover{
+	color:#dad2d2;
+}
+input.usr_nm {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    height: 35px;
+    width: 327px;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 6px;
+    outline: none;
+}
+::-webkit-input-placeholder{
+	color:white;
+	transition:.3s ease-in-out;
+}
+:focus::-webkit-input-placeholder{
+	opacity:0.5;
+}
+.usr_email{
+	position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 35px;
+    width: 327px;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 6px;
+    outline: none;
+}
+.usr_pass{
+	position: absolute;
+    top: 50%;
+    left: 5%;
+    height: 35px;
+    width: 327px;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 6px;
+    outline: none;
+}
+#hide1{
+	display:none;
+}
+.eye{
+	position: absolute;
+    top: 52%;
+    left: 90%;
+    color: #fff;
+    cursor: pointer;
+}
+button.singUp_btn {
+    position: absolute;
+    top: 75%;
+    left: 24%;
+    height: 35px;
+    width: 164px;
+    background: white;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: orange;
+    font-size: 16px;
+    padding: 4px;
+    outline: none;
+    font-family: arial black;
+    cursor: pointer;
+}
+.eye_2{
+	position: absolute;
+    top: 37%;
+    left: 90%;
+    color: #fff;
+    cursor: pointer;
+}
+#hide3{
+	display:none;
+}
+.logIN_pass{
+	position: absolute;
+    top: 35%;
+    left: 5%;
+    height: 35px;
+    width: 327px;
+    background: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 6px;
+    outline: none;
+}
+button.logIn_btn {
+    position: absolute;
+    top: 58%;
+    left: 24%;
+    height: 35px;
+    width: 164px;
+    background: white;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: orange;
+    font-size: 16px;
+    padding: 4px;
+    outline: none;
+    font-family: arial black;
+    cursor: pointer;
+}
+p.fg_pass {
+    position: absolute;
+    top: 48%;
+    left: 6%;
+    font-size: 12px;
+}
+p.fg_pass a {
+	 color: white;
+	 text-decoration:none;
+}
+
+/* login singUp btn/box  */
+
+
+/* nav bar start */
+
+.nav_bar{
+	position:fixed;
+	width:100%;
+	padding:5px;
+	text-align:center;
+	top:0;
+	transition:.5s;
+}
+.nav_bar ul li{
+	list-style-type:none;
+	display:inline-block;
+	padding:10px;
+	color:white;
+	font-size:16px;
+	margin: 0px 21px;
+	cursor:pointer;
+}
+.nav_bar ul li:hover{
+	color:#dad2d2;
+}
+
+#icon_div{
+	position:absolute;
+	top:0;
+	float:left;
+}
+#RA{
+    font-family: Colonna MT;
+    color: #10ff00;
+    font-size: 36px;
+}	
+#mylogo{
+	color: red;
+    font-family: arial black;
+    font-size: 22px;
+}
+#icon{
+	font-size: 26px;
+    margin-top: 10px;
+    margin-left: 17px;
+    color: #fff702;
+}
+#icon_2{
+	margin-right:10px;
+}
+.search{
+	position: absolute;
+    top: 7px;
+    right: 10px;
+    height: 30px;
+    width: 216px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 4px 10px;
+    color: white;
+	outline:none;
+}
+.src_icon{
+	position: absolute;
+    top: 7px;
+    right: 9px;
+    background: #fff;
+    width: 35px;
+    height: 30px;
+    border-radius: 0px 18px 18px 0px;
+    cursor: pointer;
+}
+.fa-search {
+    padding: 7px 7px;
+}
+.src_icon:hover{
+	background:#ddd;		
+}
+/* nav bar end */
+
+/* parsonal info start */
+
+i.fa.fa-bars {
+    position: absolute;
+    top: 10%;
+    left: 30px;
+    font-size: 28px;
+	color: white;
+    cursor: pointer;
+}
+.fa.fa-bars:hover{
+	color:#dad2d2;
+}
+.myInfo {
+    position: absolute;
+    top: 16%;
+    left: 8px;
+    width: 200px;
+    height: 300px;
+    background: #03a2ffad;
+    border-radius: 5px;
+	display:none;
+}
+.mypicture img{
+	width: 80px;
+    height: 80px;
+    margin: 12px 0px 0px 56px;
+    border-radius: 68px;
+}
+.myNm{
+	font-size: 18px;
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    margin: 0px 0px 13px 0px;
+}
+.content{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.fbId {
+   background: blue;
+    width: 45px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;
+    margin: 28px 0px 0px 70px;
+}
+i.fa.fa-facebook {
+    color: white;
+    font-size: 25px;
+    padding: 6px 0px 0px 14px;
+    cursor: pointer;
+}
+/* parsonal info start */
+
+
+/* setting box start */
+
+.min_sttnBox {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    height: 500px;
+    width: 226px;
+    background: #333;
+    border-radius: 5px;
+	transform:scaleX(0);
+	transition:1s;
+	transform-origin:right;	
+}	
+.sttn_btnBox {
+    position: absolute;
+    background:rgb(87 86 97);
+    top: 32%;
+    left: 0;
+    width: 100%;
+    height: 37px;
+} 
+i.fa.fa-cog {
+    color: white;
+    font-size: 24px;
+    margin: 6px 0px 0px 10px;
+	cursor:pointer;
+	
+}
+.sttn_01 {
+    position: absolute;
+    top: 220px;
+    right: 0;
+    background:rgb(87 86 97);
+    width: 48px;
+    height: 37px;
+    border-radius: 8px 0px 0px 6px;
+    cursor: pointer;
+	transition:1s;
+}
+.sttn_02{
+    position: absolute;
+    top: 220px;
+    right: 224px;
+    background:rgb(87 86 97);
+    width: 48px;
+    height: 37px;
+    border-radius: 8px 0px 0px 6px;
+    cursor: pointer;
+	transition:1s;
+}
+/* setting box end */
+
+.ceak{
+	width:100%;
+	height:100vh;
+	background:orange;
+	left:0;
+	
+}
+
+
+                                /* ---------Make web site responsive-------- */
+
+                          

@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>My Design</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="icon" href="asset/img/fabicon.png" type="image/png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<script type="text/javascript" src="asset/jquery/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+
+<!-- main contante start -->
+	
+	<section class="sec_1">
+		<div class="continer"> 
+			<div class="outer"> 
+				<div class="details"> 
+					<h1>coding is  <span>love and life</span> </h1>
+					<h2>it brightens the future</h2>
+					<div class="btn"> 
+						<input type="submit" class=" RRRR sign_up" value="Sing Up" />
+						<input type="submit" class=" rrrr login" value="Log in"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="singUp_box">
+			<i class="fa fa-close"></i>
+			<input type="text" placeholder="User Name" class="usr_nm"/>
+			<input type="email" placeholder="Phone or email address" class="usr_email"/>
+			<input type="password" placeholder="Enter password" class="usr_pass"/>
+			<span class="eye" onclick="myfunction()"> 
+				<i id="hide1" class="fa fa-eye"></i>
+				<i id="hide2" class="fa fa-eye-slash"></i>
+			</span>
+			
+			<button class="singUp_btn">Sing Up</button>
+			
+		</div>
+		
+		<div class="logIn_box">
+			<i class="fa fa-close" id="close"></i>
+			<input type="text" placeholder="User name or email" class="usr_nm"/>
+			<input type="password" placeholder="Enter password" class="usr_pass logIN_pass" />
+			<span class="eye_2" onclick="myfunction_02()"> 
+				<i id="hide3" class="fa fa-eye"></i>
+				<i id="hide4" class="fa fa-eye-slash"></i>
+			</span>
+			
+			<p class="fg_pass"><a href=""> Forget password</a></p>
+			
+			<button class="logIn_btn">Log In</button>
+		</div>
+		
+	<!-- parsonal info start -->
+		
+		<i class="fa fa-bars info_Btn"></i>
+		
+		<div class="myInfo"> 
+			<div class="mypicture"> 
+				<img src="asset/img/my picture.jpg" alt="" />
+			</div>
+			<p class="myNm">Rasel Ahommed Rana</p>
+			<p class="content">I am a student of Gopalgonj Polytechnic Institute.I am a future computer engineer and I love web design </p>
+			
+			<div class="fbId">
+				<a href="https://www.facebook.com/mdraselahommed.rana" target="blink"><i class="fa fa-facebook"></i></a>
+			</div>
+		</div>
+		
+	<!-- parsonal info end -->
+		
+	<!-- setting manu start -->
+	
+		<div class="min_sttnBox"> 
+			<div class="sttn_btnBox">
+			
+			</div>
+		</div>
+		<div class="sttn_01   sttn_jv">
+			<i class="fa fa-cog"></i>
+		</div>
+	
+		<!-- setting manu end -->
+		
+	</section>
+	
+	<!-- main contante end -->
+	
+	<!-- nav bar start -->
+		
+		<div class="nav_bar"> 
+			<ul>
+				<li>HOME</li>
+				<li>SERVICE</li>
+				<li>ABOUT</li>
+				<li>CONTACT</li>
+			</ul>
+			
+			<div id="icon_div"><i class="fa fa-ravelry" aria-hidden="true" id="icon"></i><span id="RA">RA</span><span id="mylogo">R</span>
+			</div>	
+
+			<input type="text" placeholder="Type here to search" class="search" />
+			
+			<div class="src_icon"> 
+				<i class="fa fa-search"></i>
+			</div>
+			
+		</div>
+	
+	<!-- nav bar end -->
+	
+
+	<script type="text/javascript"> 
+	
+	// singUp logIn button start
+	
+		document.querySelector(".RRRR").addEventListener("click",function(){
+			if(document.querySelector(".RRRR").classList.contains("sign_up")){
+				document.querySelector(".RRRR").classList.remove("sign_up");
+				document.querySelector(".RRRR").classList.add("After_click");
+			
+				document.querySelector(".rrrr").classList.remove("login");
+				document.querySelector(".rrrr").classList.add("After_click_2");
+			
+			
+			}else if(document.querySelector(".RRRR").classList.contains("After_click")){
+				
+			}
+			});
+	
+		document.querySelector(".rrrr").addEventListener("click",function(){
+			if(document.querySelector(".rrrr").classList.contains("login")){
+					
+			}else if(document.querySelector(".rrrr").classList.contains("After_click_2")){
+				document.querySelector(".rrrr").classList.remove("After_click_2");
+				document.querySelector(".rrrr").classList.add("login");
+	
+				document.querySelector(".RRRR").classList.remove("After_click");
+				document.querySelector(".RRRR").classList.add("sign_up");
+		}
+		})
+	// singUp logIn button end 
+		
+	//  sing up box start
+		
+			document.querySelector(".RRRR").addEventListener("click",function(){ 
+			document.querySelector(".singUp_box").setAttribute("style","opacity:1;transform:scaleX(1);");
+
+	//setting box remove
+			document.querySelector(".sttn_jv").classList.remove("sttn_02");
+			document.querySelector(".sttn_jv").classList.add("sttn_01");
+			document.querySelector(".min_sttnBox").setAttribute("style","transform:scaleX(0)"); 
+			
+			}); 
+	// info box remove
+			$("document").ready(function(){
+			$(".RRRR").click(function(){
+			$(".myInfo").slideUp(500);
+			})
+		});
+			
+		
+			document.querySelector(".fa-close").addEventListener("click",function(){
+			document.querySelector(".singUp_box").setAttribute("style","opacity:0;transform:scaleX(0)");
+		
+		});
+		
+		
+			document.querySelector(".rrrr").addEventListener("click",function(){ 
+			document.querySelector(".singUp_box").setAttribute("style","opacity:0;transform:scaleX(0)"); 
+		});
+		
+			document.querySelector(".singUp_btn").addEventListener("click",function(){ 
+			document.querySelector(".singUp_box").setAttribute("style","opacity:0;transform:scaleX(0)"); 
+		});
+	// sing up box end 
+		
+	// log in box start
+		
+			document.querySelector(".rrrr").addEventListener("click",function(){ 
+			document.querySelector(".logIn_box").setAttribute("style","opacity:1;transform:scaleX(1)"); 
+			 
+	// setting box remove 
+			document.querySelector(".sttn_jv").classList.remove("sttn_02");
+			document.querySelector(".sttn_jv").classList.add("sttn_01");
+			document.querySelector(".min_sttnBox").setAttribute("style","transform:scaleX(0)"); 
+			 
+		});
+			
+	//info box remove
+			$("document").ready(function(){
+			 $(".rrrr").click(function(){
+			$(".myInfo").slideUp(500);
+			})
+		});
+			
+
+			document.querySelector("#close").addEventListener("click",function(){
+			document.querySelector(".logIn_box").setAttribute("style","opacity:0;transform:scaleX(0)");
+		
+		});
+		
+			document.querySelector(".RRRR").addEventListener("click",function(){ 
+			document.querySelector(".logIn_box").setAttribute("style","opacity:0;transform:scaleX(0)"); 
+		});
+		
+			document.querySelector(".logIn_btn").addEventListener("click",function(){ 
+			document.querySelector(".logIn_box").setAttribute("style","opacity:0;transform:scaleX(0)"); 
+		});
+	//log in box start
+		
+	
+	
+	
+	//sing up box password show code start 
+			function myfunction(){
+			var x = document.querySelector(".usr_pass");
+			var y = document.querySelector("#hide1");
+			var z = document.querySelector("#hide2");
+		
+			if(x.type === 'password'){
+				x.type = "text";
+				y.style.display = "block";
+				z.style.display = "none";
+			}else{
+				x.type = "password";
+				y.style.display = "none";
+				z.style.display = "block";
+			}
+		}
+	//sing up box password show code end
+	
+	
+	//log in box password show code start 
+			function myfunction_02(){
+			var a = document.querySelector(".logIN_pass");
+			var b = document.querySelector("#hide3");
+			var c = document.querySelector("#hide4");
+			
+			if(a.type === 'password'){
+				a.type = "text";
+				b.style.display = "block";
+				c.style.display = "none";
+			}else{
+				a.type = "password";
+				b.style.display = "none";
+				c.style.display = "block";
+			}
+			}
+	// log in box password show code end 
+	
+	// nav bar start 	
+
+			var navScrol = document.querySelector(".nav_bar")
+			
+			window.onscroll = function(){
+				if(window.pageYOffset > 100){
+					navScrol.style.background = "rgb(0 0 0 / 43%)";
+				}
+				else{
+					navScrol.style.background = "transparent";
+				}
+			}
+	// nav bar end 
+
+	// parsonal info start 
+		
+			$("document").ready(function(){
+			$(".info_Btn").click(function(){
+				$(".myInfo").slideToggle(500);
+			})
+			})
+		
+	// remove singup logIn setting box
+			document.querySelector(".info_Btn").addEventListener("click",function(){
+			document.querySelector(".sttn_jv").classList.remove("sttn_02");
+			document.querySelector(".sttn_jv").classList.add("sttn_01");
+			document.querySelector(".min_sttnBox").setAttribute("style","transform:scaleX(0)");		
+			document.querySelector(".logIn_box").setAttribute("style","opacity:0;transform:scaleX(0)");
+			document.querySelector(".singUp_box").setAttribute("style","opacity:0;transform:scaleX(0)");
+
+			})
+		
+		
+		
+		
+	
+	// parsonal info end
+	
+	// setting manu start 	
+	
+		document.querySelector(".sttn_jv").addEventListener("click",function(){
+			if(document.querySelector(".sttn_jv").classList.contains("sttn_01")){
+				document.querySelector(".sttn_jv").classList.remove("sttn_01");
+				document.querySelector(".sttn_jv").classList.add("sttn_02");
+				document.querySelector(".min_sttnBox").setAttribute("style","transform:scaleX(1)");
+				
+				
+				document.querySelector(".logIn_box").setAttribute("style","opacity:0;transform:scaleX(0)");
+				document.querySelector(".singUp_box").setAttribute("style","opacity:0;transform:scaleX(0)");
+			
+			
+			}else if(document.querySelector(".sttn_jv").classList.contains("sttn_02")){
+				document.querySelector(".sttn_jv").classList.remove("sttn_02");
+				document.querySelector(".sttn_jv").classList.add("sttn_01");
+				document.querySelector(".min_sttnBox").setAttribute("style","transform:scaleX(0)"); 
+				
+			}
+			});
+			
+			$("document").ready(function(){
+			$(".sttn_jv").click(function(){
+			$(".myInfo").slideUp(500);
+			})
+			})
+			
+
+	
+	</script>
+	
+
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
